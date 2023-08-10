@@ -1,0 +1,163 @@
+*{
+    font-family: 'VT323', monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(43, 46, 69);
+    margin-top: -30px;
+}
+
+h1{
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 50px;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 80px;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 5px 5px;
+    outline: none;
+}
+
+.colorSelector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 2px 2px rgb(3, 3, 3);
+    color: #ffffff;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+#color{
+    margin-top: 5px;
+    margin-bottom: -30px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 3px 3px;
+}
+
+#color:hover{
+    transform: scale(1.1);
+}
+
+#color:active{
+    transform: scale(1.2);
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(1.2);
+}
+
+#rgb{
+    background: linear-gradient(to right, hwb(237 26% 40%), #5380ea, #7398d3);
+}
+
+.sliderVal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+#slider{
+    -webkit-appearance: none;
+    background: #f8f8f8;
+    outline: none;
+    border-radius: 30px;
+    
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    background: hsl(0, 0%, 0%); 
+    border-radius: 50px;
+}
+
+#slider::-moz-range-thumb{
+    width: 25px; 
+    height: 25px; 
+    background: hsl(0, 0%, 0%); 
+    border-radius: 50px;
+    text-shadow: 5px 5px hsl(0, 0%, 0%);
+}
+
+.value{
+    font-size: 30px;
+    padding-left: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px hsl(0, 0%, 0%);
+
+}
+
+.grid{
+    margin-top: 0px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+    background-color: gray;
+    box-shadow: 10px 10px;
+}
+
+.cell{
+    background-color: white;
+    border: 1px solid black;
+}
+
+footer{
+    font-size: 25px;
+    bottom: 0;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#gh-logo{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -9px;
+    margin-right: 10px;
+}
+
+
+
